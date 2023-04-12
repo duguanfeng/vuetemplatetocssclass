@@ -1,0 +1,55 @@
+{
+  "name": "vuetemplatetocssclass",
+  "displayName": "vueTemplateToCssClass",
+  "description": "An extension plugin that automatically generates SCSS classes based on the structure of Vue templates.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:vuetemplatetocssclass.generateCss"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "menus": {
+      "editor/context": [
+        {
+          "command": "vuetemplatetocssclass.generateCss",
+          "group": "1_modification",
+          "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "vuetemplatetocssclass.generateCss",
+        "title": "自动生成vue的class：generateCss",
+        "when": "editorFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "pnpm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@types/vscode": "1.60",
+    "@vscode/test-electron": "^2.3.0",
+    "eslint": "^8.36.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.2.0",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@vue/compiler-core": "^3.2.47",
+    "@vue/shared": "^3.2.47",
+    "vsce": "^2.15.0"
+  }
+}
