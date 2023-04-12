@@ -5,9 +5,9 @@
 - `shift+ctrl+p` 打开命令行, 输入 `自动生成vue的class：generateCss`, 自动生成class;
 - 右键,点击`自动生成vue的class：generateCss`, 自动生成class;
 
-![Command](./img/command.jpg)
-![Command](./img/right.jpg)
-![Command](./img/result.jpg)
+![Command](/img/command.jpg)
+![Command](/img/right.jpg)
+![Command](/img/result.jpg)
 
 ### Example
 ```vue

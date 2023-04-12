@@ -1,11 +1,16 @@
 {
   "name": "vuetemplatetocssclass",
-  "displayName": "vueTemplateToCssClass",
+  "displayName": "Vue Template To Css Class",
+  "publisher": "duguanfeng",
+  "repository": {
+		"url": "https://github.com/duguanfeng/vuetemplatetocssclass"
+	},
   "description": "An extension plugin that automatically generates SCSS classes based on the structure of Vue templates.",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.60.0"
   },
+  "icon": "vueicon.jpg",
   "categories": [
     "Other"
   ],
